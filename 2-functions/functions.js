@@ -359,6 +359,8 @@ describe("functions", function() {
                 // There are two possible solutions that break the loop. Can you find both?
                 // ✏️ ADD CODE HERE ✏️
                     return; //stops execution
+                    //or use shadowing
+                    //function breakTheLoop(){}; 
                 ////////////////////////////////////////////////////////////////////
 
                 breakTheLoop(); // Recursive call
@@ -374,7 +376,14 @@ describe("functions", function() {
             // Can you implement a function 'myFunction' that returns a function
             // which returns the number of arguments of 'myFunction' when called?
             // ✏️ ADD CODE HERE ✏️
+                function myFunction(){
+                    const length = arguments.length;
 
+                    return function(){
+                        return length;
+                    }
+                    //or use arrow function return () => length;
+                }
             ////////////////////////////////////////////////////////////////////
 
             // Look at that strange code: myFunction()().
