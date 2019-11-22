@@ -12,8 +12,9 @@ describe("arrays", function() {
         it("should run without errors", function() {
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
-                const getNumberOfItems = [];
-                console.log(getNumberOfItems.length);
+                function getNumberOfItems(array){
+                    return array.length;
+                }
             ////////////////////////////////////////////////////////////////////
 
             expect(getNumberOfItems([])).to.equal(0);
