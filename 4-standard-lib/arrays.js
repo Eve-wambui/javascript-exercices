@@ -12,7 +12,8 @@ describe("arrays", function() {
         it("should run without errors", function() {
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
-
+                const getNumberOfItems = [];
+                console.log(getNumberOfItems.length);
             ////////////////////////////////////////////////////////////////////
 
             expect(getNumberOfItems([])).to.equal(0);
@@ -28,7 +29,7 @@ describe("arrays", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
-
+                const removeLastItem = array.pop();
             ////////////////////////////////////////////////////////////////////
 
             expect(removeLastItem()).to.equal("d");
