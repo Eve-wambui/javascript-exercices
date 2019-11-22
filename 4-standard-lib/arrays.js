@@ -29,7 +29,9 @@ describe("arrays", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
-                const removeLastItem = array.pop();
+            function removeLastItem(){
+                return array.pop();
+            }    
             ////////////////////////////////////////////////////////////////////
 
             expect(removeLastItem()).to.equal("d");
