@@ -150,7 +150,9 @@ describe("arrays", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
-
+            function backwards(){
+                return array.reverse();
+            }
             ////////////////////////////////////////////////////////////////////
 
             backwards();
