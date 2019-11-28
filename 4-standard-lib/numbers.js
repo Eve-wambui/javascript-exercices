@@ -13,7 +13,7 @@ describe("numbers", function() {
             ////////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
                 function isFiniteNumber(number){
-                    return Number.isFinite(number);
+                    return typeof number === "number" && Number.isFinite(number);
                 }
             ////////////////////////////////////////////////////////////////////////
 
