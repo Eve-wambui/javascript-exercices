@@ -342,13 +342,15 @@ describe("arrays", function() {
         });
     });
 
-    describe("Exclude numbers below a certain limit", function() {
+    describe("Exclude numbers below a certain limit", function(t) {
         it("should run without errors", function() {
             const numbers = [1, 2, 3, 4, 5];
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
-
+                function excludeNumbersBelowLimit(limit) {
+                    return numbers.filter((number) => number >= limit);
+                }
             ////////////////////////////////////////////////////////////////////
 
             expect(excludeNumbersBelowLimit(1)).to.eql([1, 2, 3, 4, 5]);
